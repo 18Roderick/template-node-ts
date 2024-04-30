@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc -w",
+    "start": "nodemon --watch src ./src/main.ts",
+    "n:dev": "nodemon --exec ",
     "build": "tsc",
     "bun:dev": "bun --watch run ./src/main.ts ",
     "start:prod": "node dist/index.js"
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.2",
     "@swc/core": "^1.4.17",
+    "@types/node": "^20.12.7",
     "drizzle-kit": "^0.20.17",
     "nodemon": "^3.1.0",
     "tsc": "^2.0.4",
