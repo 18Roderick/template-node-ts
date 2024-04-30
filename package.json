@@ -1,0 +1,32 @@
+{
+  "name": "template-node-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "bun:dev": "bun --watch run ./src/main.ts ",
+    "start:prod": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.7.2",
+    "@swc/core": "^1.4.17",
+    "drizzle-kit": "^0.20.17",
+    "nodemon": "^3.1.0",
+    "tsc": "^2.0.4",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.30.9",
+    "effect": "^3.1.0",
+    "hono": "^4.2.9",
+    "ts-node": "^10.9.2",
+    "zod": "^3.23.5"
+  }
+}

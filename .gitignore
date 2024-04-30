@@ -1,0 +1,30 @@
+# Ignorar archivos generados
+node_modules
+dist
+coverage
+
+# Ignorar archivos de configuración
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignorar archivos de bloqueo
+package-lock.json
+yarn.lock
+
+# Ignorar archivos de configuración del editor
+.vscode
+.idea
+
+# Ignorar archivos de prueba
+__tests__
+*.spec.ts
+*.test.ts
+
+# Ignorar archivos de documentación
+docs
+
+# Ignorar archivos de compilación
+tsconfig.tsbuildinfo
