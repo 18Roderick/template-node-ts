@@ -1,3 +1,6 @@
+import {} from "effect"
+
+
 export interface PokemonDetails {
   abilities: Ability[];
   base_experience: number;

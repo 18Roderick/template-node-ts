@@ -25,9 +25,6 @@ const program = pipe(
       catch: () => new Error("Parsing json pokmemon failed"),
     });
   }),
-  // Effect.flatMap((x) => {
-  //   return Effect.succeed(x);
-  // })
 );
 
 const math = pipe(
