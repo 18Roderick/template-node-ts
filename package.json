@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsx watch ./src/main.ts",
-    "n:dev": "tsx watch ./src/main.ts ",
+    "start": "nodemon --watch src ./src/main.ts",
+    "dev": "tsx watch ./src/main.ts",
     "build": "tsc",
     "bun:dev": "bun --watch run ./src/main.ts ",
-    "start:prod": "node dist/index.js"
+    "start:prod": "node dist/main.js"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +20,8 @@
     "drizzle-kit": "^0.20.17",
     "nodemon": "^3.1.0",
     "tsc": "^2.0.4",
-    "tsx": "^4.9.3",
-    "typescript": "^5.4.5",
-    "vitest": "^1.6.0"
+    "tsx": "^4.9.1",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@clerk/backend": "^1.1.0",
@@ -31,6 +30,7 @@
     "@hono/zod-validator": "^0.2.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.9",
+    "drizzle-zod": "^0.5.1",
     "effect": "^3.1.0",
     "hono": "^4.2.9",
     "std-env": "^3.7.0",

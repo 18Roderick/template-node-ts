@@ -8,7 +8,7 @@ import { secureHeaders } from "hono/secure-headers";
 import { env } from "./config/env";
 import { Runner } from "./runner";
 
-Runner();
+//Runner();
 
 const app = new Hono();
 
