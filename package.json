@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "tsx watch ./src/main.ts",
     "dev": "tsx watch ./src/main.ts",
@@ -15,7 +16,6 @@
   "license": "ISC",
   "devDependencies": {
     "@biomejs/biome": "1.7.2",
-    "@swc/core": "^1.4.17",
     "@types/node": "^20.12.7",
     "drizzle-kit": "^0.20.17",
     "tsc": "^2.0.4",
@@ -32,6 +32,7 @@
     "drizzle-zod": "^0.5.1",
     "effect": "^3.1.0",
     "hono": "^4.2.9",
+    "postgres": "^3.4.4",
     "std-env": "^3.7.0",
     "ts-node": "^10.9.2",
     "zod": "^3.23.5"

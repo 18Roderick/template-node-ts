@@ -36,6 +36,7 @@ const fetchPokemon = Effect.tryPromise({
   catch: error => new FetchError(`Fetching pokmemon failed${error}`),
 });
 
+// reintenta 2 veces si falla la peticion con un delay de 500ms
 const policy = Schedule.addDelay(Schedule.recurs(2), () => 500);
 
 const program = pipe(
