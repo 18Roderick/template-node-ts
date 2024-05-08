@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch src ./src/main.ts",
+    "start": "tsx watch ./src/main.ts",
     "dev": "tsx watch ./src/main.ts",
     "build": "tsc",
     "bun:dev": "bun --watch run ./src/main.ts ",
@@ -18,7 +18,6 @@
     "@swc/core": "^1.4.17",
     "@types/node": "^20.12.7",
     "drizzle-kit": "^0.20.17",
-    "nodemon": "^3.1.0",
     "tsc": "^2.0.4",
     "tsx": "^4.9.1",
     "typescript": "^5.4.5"
